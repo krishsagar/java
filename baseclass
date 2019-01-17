@@ -1,0 +1,31 @@
+public class Base {
+
+	public static void main(String[] args) {
+		boolean x=false;
+		String nextOredr;
+		ArrayList<Integer> orderList=new ArrayList<Integer>();
+		Scanner inputUSer=new Scanner(System.in);
+		Order ord =new Order();
+		try {
+			while(x!=true)
+		ord.setOrderID(inputUSer.nextInt());
+		orderList.add(ord.getOrderID());
+		ord.setEmailID("emailID"+inputUSer.next());
+		ord.setMenu("menu"+"veg/non-veg/vegan"+inputUSer.next().toLowerCase());
+		ord.setMobileNumber(inputUSer.nextLong());
+		ord.setName("name"+inputUSer.next());
+		ord.setOrderType("orderType"+"snacks/ meals"+inputUSer.next().toLowerCase());
+		ord.setAddress("address"+inputUSer.next());
+		nextOredr=("Do you want next order "+ "yes/no"+inputUSer.next().toLowerCase());
+		if(nextOredr.equalsIgnoreCase("no"))
+		{
+			x=true;
+		}
+		}
+		finally
+		{
+		inputUSer.close();
+       }
+	}
+
+}
