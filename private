@@ -1,0 +1,53 @@
+package knew;
+
+public class Order {
+private int orderID;
+private String name;
+private Long mobileNumber;
+private String emailID;
+private String address;
+private String orderType;
+private String menu;
+public int getOrderID() {
+	return orderID;
+}
+public void setOrderID(int orderID) {
+	this.orderID = orderID;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public Long getMobileNumber() {
+	return mobileNumber;
+}
+public void setMobileNumber(Long mobileNumber) {
+	this.mobileNumber = mobileNumber;
+}
+public String getEmailID() {
+	return emailID;
+}
+public void setEmailID(String emailID) {
+	this.emailID = emailID;
+}
+public String getAddress() {
+	return address;
+}
+public void setAddress(String address) {
+	this.address = address;
+}
+public String getOrderType() {
+	return orderType;
+}
+public void setOrderType(String orderType) {
+	this.orderType = orderType;
+}
+public String getMenu() {
+	return menu;
+}
+public void setMenu(String menu) {
+	this.menu = menu;
+}
+}
