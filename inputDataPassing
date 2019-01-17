@@ -1,0 +1,34 @@
+class Ss
+	{
+	    int id, salary;
+	    String name;
+
+	   public Ss(int nextInt, int nextInt2, String nextLine) {
+			// TODO Auto-generated constructor stub
+		}
+
+	void Ss(int id, int salary, String name)
+	    {
+	        this.id = id;
+	        this.salary = salary;
+	        this.name = name;
+	    }
+
+	    void display()
+	    {
+	        System.out.println("The id of employee:" + id);
+	        System.out.println("The name of employye:" + name);
+	        System.out.println("The salary of employee:" + salary);
+	    }
+	}
+
+	class employee
+	{
+	    public static void main(String args[])
+	    {
+	        Scanner sc = new Scanner(System.in);
+
+	        Ss s = new Ss(sc.nextInt(), sc.nextInt(), sc.nextLine());
+	        s.display();
+	    }
+	}
